@@ -1,0 +1,49 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2><span>Please Register Here !</span></h2>
+    <div class="main">
+        <form  action="/register" method="post"  >
+            <label >username</label>
+            <input required type="text" autocomplete="off" name="username"  placeholder="Enter Your Name">
+            <br>
+            <br>
+            <label>gender</label>
+            <label><input type="radio" name="gender" >&nbsp; Male</label>
+            <label><input type="radio" name="gender">&nbsp;Female</label>
+            <label><input type="radio" name="gender">&nbsp;Other</label>
+            <br><br>
+            <label>date</label>
+            <input  type="date" name="date" placeholder="dob">
+            <br>
+            <br>
+            <label >phone</label>
+            <input  type="tel" maxlength="12" minlength="10" placeholder="Enter your contact number" name="phone">
+            <br>
+            <br>
+            <label >email</label>
+            <input  type="email" name="email"  placeholder="Enter Your Valid Email">
+            <br>
+            <br>
+            <label >password</label>
+            <input required type="password" autocomplete="off" name="password" placeholder="Enter Your Password">
+            <br>
+            <br>
+            <label >confirmpassword</label>
+            <input required type="password" name="confirmpassword"  placeholder="Confirm Password">
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="submit" >
+        </form>
+        <p><strong>' * '</strong> required field</p>
+    </div>
+</body>
+</html>

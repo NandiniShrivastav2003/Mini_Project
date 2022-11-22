@@ -1,0 +1,63 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    {{{register}}}
+    <h1>hello from nandini in hbs file</h1>
+</body>
+</html> --}}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2><span>Please Register Here !</span></h2>
+    <div class="main">
+        <form class="registration" id="reg-form">
+            <label >User Name* : &nbsp;</label>
+            <input required type="text" autocomplete="off"  name="username"  placeholder="Enter Your Name">
+            <br>
+            <br>
+            <label>Gender* : &nbsp;</label>
+            <label><input type="radio" name="gender" >&nbsp; Male</label>
+            <label><input type="radio" name="gender">&nbsp;Female</label>
+            <label><input type="radio" name="gender">&nbsp;Other</label>
+            <br><br>
+            <label> Date of Birth (D.O.B.)* : &nbsp;</label>
+            <input required type="date" id="date" placeholder="dob">
+            <br>
+            <br>
+            <label >Contact Number* : &nbsp;</label>
+            <input required type="tel" maxlength="12" minlength="10" placeholder="Enter your valid contact number">
+            <br>
+            <br>
+            <label >Email Id* : &nbsp;</label>
+            <input required type="email" name="Email Id" id="email" placeholder="Enter Your Valid Email">
+            <br>
+            <br>
+            <label >Password* : &nbsp;</label>
+            <input required type="password" autocomplete="off" name="password" placeholder="Enter Your Password">
+            <br>
+            <br>
+            <label > Confirm Password* : &nbsp;</label>
+            <input required type="password" name="confirmpassword"  placeholder="Confirm Password">
+            <br>
+            <br>
+            <br>
+            <input type="submit" id="submit">Submit</button>
+        </form>
+        <p><strong>' * '</strong> required field</p>
+    </div>
+</body>
+</html>
